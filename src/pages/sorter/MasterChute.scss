@@ -1,0 +1,90 @@
+
+.master-chute {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 100px;
+      padding: 0px;
+      margin: 10px;
+      background: #eee;
+      text-align: center;
+      border: 1px solid #ddd;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        background: #e1e1e1;
+      }
+
+      .chute-name {
+        padding: 5px;
+        font-size: 0.85em;
+
+        &.OVERFLOW, &.BLOCKED {
+          text-decoration: line-through;
+        }
+      }
+      .chute-type {
+        font-size: 0.65em;
+        background: #ccc;
+        padding: 2px;
+
+        &.REJECT {
+          background: orangered;
+          color: #eeeeee;
+        }
+
+        &.OVERFLOW {
+          background: red;
+          color: #eeeeee;
+        }
+      }
+      .chute-status {
+        font-size: 0.65em;
+        background: #dddddd;
+        padding: 2px 10px;
+        margin: 5px;
+        display: inline-block;
+
+        &.OVERFLOW {
+          background: red;
+          color: #eeeeee;
+        }
+        &.BLOCKED {
+          background: orangered;
+          color: #eeeeee;
+        }
+      }
+    }
+  }
+
+  .chute-edit-container {
+    padding: 10px;
+    background: #eeeeee;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+    border: 2px solid #cccccc;
+    margin: 10px;
+
+    &.REJECT {
+      background: orangered;
+      color: #eeeeee;
+    }
+    &.OVERFLOW {
+      background: red;
+      color: #eeeeee;
+    }
+
+    p {
+      font-size: 0.85em;
+    }
+
+
+  }
+}

@@ -1,0 +1,32 @@
+
+.order-chute-items {
+  display: flex;
+
+  .order-chute {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 10px;
+        background: #cccccc;
+        cursor: pointer;
+
+        &:hover{
+          background: #eeeeee;
+        }
+
+        span {
+          padding: 5px;
+          background: #eeeeee;
+          border-radius: 5px;
+          font-size: 0.75em;
+        }
+      }
+    }
+  }
+
+  .order-items {
+
+  }
+}
